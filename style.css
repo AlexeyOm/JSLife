@@ -1,0 +1,9 @@
+td { height : 20px;
+     width : 20px;
+     background-color : #FF9900;
+     padding : 10px 10px 10px 10px;
+    
+}
+
+.highlighted { background-color : #66FF66;
+}
