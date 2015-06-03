@@ -1,23 +1,20 @@
 $(document).ready(function () {
     var life = {
         cellCount : 100,
+        rowWidth : 10,
+        colHeight : 10,
         cells : new Array (100)
     };
     
-    /* todo - дописать
+    
     life.getNeighbour = function (cellNum, direction) {
-        switch (direction) {
-            case "up" : if (this.cells[cellNum] === 1
-            case "down" :
-            case "left" :
-            case "right" :
-        };
+        
         
         if(this.cells[cellNum] === 1) {
-            
+            return 1;
         }
     };
-    */
+    
     
     $("td").click(function () { 
         $(this).toggleClass("highlighted");
@@ -33,7 +30,7 @@ $(document).ready(function () {
                 life.cells[index] = 0;
             }
         });
-        alert (life.cells);
+        //alert (life.cells);
         alert (life.getNeighbour(2));
         /*
         for (i = 0; i < life.cells.length; i++) {
